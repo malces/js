@@ -1,4 +1,4 @@
-console.log("Inicio de programa"):
+/*console.log("Inicio de programa"):
 
 alert("Hola JavaScript");
 
@@ -6,4 +6,7 @@ document.write("<h1> Hola JavaScript!!!</h1>");
 
 alert("gracias por su visita"");
 
-console.l0g("Fin del programa");
+console.l0g("Fin del programa");*/
+
+var equipo= prompt("Cual es tu equipo favorito ??");
+console.log ("El equipo es:" + equipo);
