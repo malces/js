@@ -1,4 +1,4 @@
-console.log("Inicio de programa");
+/*console.log("Inicio de programa");
 alert("Hola JavaScript");
 document.write("<h1> Hola JavaScript!!!</h1>");
 alert("gracias por su visita");
@@ -15,4 +15,9 @@ console.log("La longitud de la clave:" + clave.length);
 console.log("TA-DA!!! su clave es:" + clave.toUpperCase());
 console.log("El valor original de la clave es: " + clave);
 
-document.write("<h2> SU CLAVE ES: " + clave + "</h2>");
+document.write("<h2> SU CLAVE ES: " + clave + "</h2>");*/
+
+console.log("Inicio del Programa");
+document.white("<h1> CUENTO MUY CORTITO </h1>");
+var 
+
