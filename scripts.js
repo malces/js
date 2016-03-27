@@ -19,5 +19,11 @@ document.write("<h2> SU CLAVE ES: " + clave + "</h2>");*/
 
 console.log("Inicio del Programa");
 document.white("<h1> CUENTO MUY CORTITO </h1>");
-var 
+document.white("<h1> Ingrese los siguientes datos </h1>");
+var sustantivo = prompt("Ingrese el sustantivo");
+var adjetivo = prompt("Ingrese el adjetivo");
+var verdad = prompt("Ingrese el verbo");
+
+
+
 
