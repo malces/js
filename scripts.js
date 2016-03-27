@@ -18,12 +18,22 @@ console.log("El valor original de la clave es: " + clave);
 document.write("<h2> SU CLAVE ES: " + clave + "</h2>");*/
 
 console.log("Inicio del Programa");
-document.white("<h1> CUENTO MUY CORTITO </h1>");
-document.white("<h1> Ingrese los siguientes datos </h1>");
+document.write("<h1> CUENTO MUY CORTITO </h1>");
+document.write("<h2> Ingrese los siguientes datos </h2>");
+
 var sustantivo = prompt("Ingrese el sustantivo");
 var adjetivo = prompt("Ingrese el adjetivo");
-var verdad = prompt("Ingrese el verbo");
+var verbo = prompt("Ingrese el verbo");
 
+// PALABRAS PARA INGRESAR 
+// SUSTANTIVO: mujer
+// ABJETIVO: enamorada
+// VERBO: conquistar 
+
+document.write("<h3> La " + sustantivo + " americana " + adjetivo + " quiere un perrito para " + verbo + " al novio </h3>");
+document.write("<h3> El novio " + verbo + " quiere una " + sustantivo + " americana y " + adjetivo + " de un perrito </h3>");
+document.write("<h3> El perrito " + adjetivo + " quiero un novio para " + verbo + " a la " + sustantivo + " americana </h3>");
+document.write("<h3> Y VIVIERON FELICES... </h3>");
 
 
 
