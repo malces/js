@@ -68,23 +68,75 @@ console.log("Fin del Programa");*/
 /*console.log("Inicio del Programa");
 
 var numero = prompt("Ingrese un numero del 1 al 10");
-if (numero === 8){
+if (numero === 8)
+{
 	alert("correcto")
 }
-else if (numero > 8){
+else if (numero > 8)
+	{
 		numero = prompt("intentalo por segunda vez, el numero es menor");
 	}
-else (numero < 8){
+else (numero < 8)
+{
 	alert("te equivocaste, el numero es: 8 ")
 }
 console.log("Programa completado");*/
 
-
-function tiraDados(){
+//////  funcion tiradados  ///////
+/*function tiraDados(){
 	var dado = Math.floor(Math.random()*6)+1;
 	alert(dado);
 }
 alert("Tiramos 3 dados: ");
 tiraDados();
 tiraDados();
-tiraDados();
+tiraDados();*/
+
+//// RETURN   ////
+/*function tiraDados(){
+	var dado = Math.floor(Math.random()*6)+1;
+	return dado;
+}
+
+alert("Tiramos 3 dados: ");
+alert("El dado dice: " + tiraDados());
+var multiplo*/
+
+//  FUNCION CON ARGUEMNTO  ///
+/*function numeroAlAzarHastaLimite(limite){
+	var num= Math.floor(Math.random()* limite )+1;
+	return num;
+}
+var numAzar = numeroAlAzarHastaLimite(100);
+alert("El valor es: " + numAzar);*/
+
+//  funcion max
+/*function max (limite){
+	var num= Math.floor(Math.random()* limite )+1;
+	return num;
+}
+
+var num1 = max(10);
+var num2 = max(10);
+if (num1 > num2)
+{
+	alert("los numeros ingresados son: " + num1 + " y " + num2 ); 
+	alert("el numero mayor es " + num1);
+
+}
+else
+{
+	alert("los numeros ingresados son: " + num1 + " y " + num2 ); 
+	alert("el numero mayor es " + num2);	
+}*/
+
+
+function saludo(){
+	var mensaje = "Hola a todos";
+	alert(mensaje);
+}
+var mensaje = "chao";
+saludo();
+alert(mensaje);
+saludo();
+
