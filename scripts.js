@@ -13,7 +13,7 @@ console.log("TA-DA!!! su clave es:" + clave.toUpperCase());
 console.log("El valor original de la clave es: " + clave);
 document.write("<h2> SU CLAVE ES: " + clave + "</h2>");*/
 
-console.log("Inicio del Programa");
+/*console.log("Inicio del Programa");
 var preguntas =3;
 var preguntasFaltantes = "quedan " + preguntas +" preguntas. ";
 alert("Este es el juego del cuenta cuentos. Sigue las instrucciones");
@@ -23,7 +23,7 @@ preguntasFaltantes = "quedan " + preguntas + " preguntas";
 var adjetivo1 = prompt("Ingrese un adjetivo. " + preguntasFaltantes);
 preguntas-=1;
 preguntasFaltantes = "quedan " + preguntas + " preguntas";
-var verbo1 = prompt("Ingrese un verbo. " + preguntasFaltantes);
+var verbo1 = prompt("Ingrese un verbo. " + preguntasFaltante);*/
 
 
 /*document.write("<h1> CUENTO MUY CORTITO </h1>");
@@ -43,7 +43,6 @@ document.write("<h3> El novio " + verbo + " quiere una " + sustantivo + " americ
 document.write("<h3> El perrito " + adjetivo + " quiero un novio para " + verbo + " a la " + sustantivo + " americana </h3>");
 document.write("<h3> Y VIVIERON FELICES... </h3>");*/
 
-
 /*var segundosPorMinuto = 60;
 var minutosPorHora= 60;
 var horasPorDia =24;
@@ -58,3 +57,34 @@ var tiempoPantalla = parseInt(peliculasVistas)+ parseInt(seriesVistas);
 alert('Wow! has visto ' + tiempoPantalla + " veces minimo la pantalla.");
 console.log("Fin del Programa");*/
 
+//////////   FUNCION MATH   /////////////
+//console.log("Inicio del Programa");
+//var numero = prompt("Ingrese un numero");
+//var dado = Math.floor(Math.random() * numero ) +1;
+//alert("el numero aleatorio es: " + dado);
+//console.log("Programa completado");
+
+//////////   CONDICION IF - ELSE   /////////////
+/*console.log("Inicio del Programa");
+
+var numero = prompt("Ingrese un numero del 1 al 10");
+if (numero === 8){
+	alert("correcto")
+}
+else if (numero > 8){
+		numero = prompt("intentalo por segunda vez, el numero es menor");
+	}
+else (numero < 8){
+	alert("te equivocaste, el numero es: 8 ")
+}
+console.log("Programa completado");*/
+
+
+function tiraDados(){
+	var dado = Math.floor(Math.random()*6)+1;
+	alert(dado);
+}
+alert("Tiramos 3 dados: ");
+tiraDados();
+tiraDados();
+tiraDados();
