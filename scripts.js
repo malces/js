@@ -130,13 +130,87 @@ else
 	alert("el numero mayor es " + num2);	
 }*/
 
-
-function saludo(){
+//// funcion saludo  ///
+/*function saludo(){
 	var mensaje = "Hola a todos";
 	alert(mensaje);
 }
 var mensaje = "chao";
 saludo();
 alert(mensaje);
-saludo();
+saludo();*/
 
+////   errores /////////
+/*console.log("inicio programa");
+var num =p;
+if (isNaN(num))
+{
+	throw new Error ("No es un numero valido");
+}
+else{
+	num = num *0.5;
+}
+console.log("fin del programa");*/
+
+///////// DESAFIO  //////////
+
+/*function max (limite1, limite2){
+	if(isNaN(limite1) || isNaN(limite2)){
+		throw new Error ("Valor ingresado no corresponde a un numero");
+	}
+	var num = Math.floor(Math.random() * (limite2 - limite1) + limite1 );
+	return num;
+}
+var num1 = prompt("ingrese el valor minimo: " );
+var num2 = prompt("ingrese el valor maximo: " );
+
+alert("el numero intermedio es: " + max(parseInt(num1), parseInt(num2)));*/
+
+
+
+/*var contador = 0;
+function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
+{
+	if(isNaN(limiteInferior) || isNaN(limiteSuperior))
+	{
+		throw new Error ("Valor ingresado no corresponde a un numero");
+	}
+	var num = Math.floor(Math.random() * (limiteSuperior - limiteInferior) + limiteInferior );
+	return num;	
+}
+
+var num1 = prompt("ingrese el valor minimo: " );
+var num2 = prompt("ingrese el valor maximo: " );
+
+while(contador<10)
+{
+	var randomico = numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2));
+	document.write(randomico + " ");
+	contador++ ;
+}*/
+
+
+var contador = 1;
+function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
+{
+	if(isNaN(limiteInferior) || isNaN(limiteSuperior))
+	{
+		throw new Error ("Valor ingresado no corresponde a un numero");
+	}
+	var num = Math.floor(Math.random() * (limiteSuperior - limiteInferior) + limiteInferior );
+	document.write(contador + " = ");
+	document.write(num + " ");
+	return num;	
+}
+
+var num1 = prompt("ingrese el valor minimo: " );
+var num2 = prompt("ingrese el valor maximo: " );
+
+while(numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2)) !== 10)
+{
+	//var randomico = numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2));
+	contador++ ;
+
+	//document.write(contador + " = ");
+	//document.write(num + " ");
+}
