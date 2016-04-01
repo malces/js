@@ -167,7 +167,7 @@ var num2 = prompt("ingrese el valor maximo: " );
 alert("el numero intermedio es: " + max(parseInt(num1), parseInt(num2)));*/
 
 
-
+/////  10 NUMEROS ALEATORIOS CON RANGO ESPECIFICADO MEDIANTE INGRESO POR TECLADO   /////////// 
 /*var contador = 0;
 function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
 {
@@ -190,7 +190,7 @@ while(contador<10)
 }*/
 
 
-var contador = 1;
+
 function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
 {
 	if(isNaN(limiteInferior) || isNaN(limiteSuperior))
@@ -198,19 +198,26 @@ function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
 		throw new Error ("Valor ingresado no corresponde a un numero");
 	}
 	var num = Math.floor(Math.random() * (limiteSuperior - limiteInferior) + limiteInferior );
-	document.write(contador + " = ");
-	document.write(num + " ");
 	return num;	
 }
 
+var contador = 1;
 var num1 = prompt("ingrese el valor minimo: " );
 var num2 = prompt("ingrese el valor maximo: " );
+var numAzar = numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2));
+var numbuscar = 0;
 
-while(numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2)) !== 10)
+document.write("El numero a buscar es el: " + numAzar);
+while(true)
 {
-	//var randomico = numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2));
+	numbuscar = numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2));
+	if (numAzar == numbuscar)
+	{
+		document.write(numbuscar + " ");
+		document.write(contador);
+		break;
+	} 
+	//document.write(numbuscar + " ");
+	document.write(contador + " ");
 	contador++ ;
-
-	//document.write(contador + " = ");
-	//document.write(num + " ");
 }
