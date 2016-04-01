@@ -190,7 +190,7 @@ while(contador<10)
 }*/
 
 
-
+//// FUNCION PARA CREAR NUMERO ALEATORIO
 function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
 {
 	if(isNaN(limiteInferior) || isNaN(limiteSuperior))
@@ -200,24 +200,22 @@ function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
 	var num = Math.floor(Math.random() * (limiteSuperior - limiteInferior) + limiteInferior );
 	return num;	
 }
-
-var contador = 1;
+//// declaracion de variables ////
+var contador = 0;
 var num1 = prompt("ingrese el valor minimo: " );
 var num2 = prompt("ingrese el valor maximo: " );
 var numAzar = numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2));
 var numbuscar = 0;
-
-document.write("El numero a buscar es el: " + numAzar);
+//// empieza la busqueda del numero al azar /////
+document.write("<h3> El numero a buscar es el: " + numAzar + "</h3>");
 while(true)
 {
+	contador++ ;
 	numbuscar = numeroAlAzarEntreLimites(parseInt(num1), parseInt(num2));
 	if (numAzar == numbuscar)
 	{
-		document.write(numbuscar + " ");
-		document.write(contador);
+		document.write("<h4> El numero fue encontrado: " + numbuscar + " en el " + contador + " ciclo." + "</h4>");
 		break;
-	} 
-	//document.write(numbuscar + " ");
-	document.write(contador + " ");
-	contador++ ;
+	} 	
 }
+
